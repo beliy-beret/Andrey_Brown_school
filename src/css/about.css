@@ -1,0 +1,46 @@
+.about {
+    padding: 5% 0;
+}
+.about > .wrapper {
+    max-width: 1100px;
+    margin: 3% auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #e3e7e8;
+    overflow: hidden;
+    position: relative;
+}
+.about__avatar img {
+    width: 80%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    filter: grayscale(1);
+}
+.about__description {
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #3F495A;
+}
+.about a {
+    color: #6F707E;
+    border: 2px solid #6F707E;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    margin-top: 4%;
+}
+.about a:before {
+    content: url("../assets/icons/downloadICO.svg");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}

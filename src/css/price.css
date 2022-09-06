@@ -1,0 +1,64 @@
+.price {
+    max-width: 890px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.price__title {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -3px;
+    color: #1C2534;
+}
+.price__form {
+    margin-top: 5%;
+    border-bottom: 3px solid #EEEEEE;
+}
+.price__form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price__form-field label {
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    margin-bottom: 1.4rem;
+}
+.price__form-field select {
+    width: 100%;
+    margin-bottom: 2.2rem;
+    padding: 1rem 3rem 1rem 1.5rem;
+    background-color: #EEEEEE;
+    color: #737373;
+    appearance: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+}
+.price__form-select {
+    position: relative;
+}
+.price__form-select::after {
+    content: "";
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.3rem;
+    background: url("../assets/icons/select_arrow.svg") center/cover no-repeat;
+}
+.price__result {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr auto;
+}
+.price__value {
+    font-size: 30px;
+    line-height: 34px;
+}

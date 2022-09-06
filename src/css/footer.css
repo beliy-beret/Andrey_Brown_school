@@ -1,0 +1,11 @@
+.footer {
+    font-family: 'ArialMT', sans-serif;
+    text-align: center;
+    padding: 3rem;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -1.25px;
+    color: #FFFFFF;
+    background-color: #203133;
+}

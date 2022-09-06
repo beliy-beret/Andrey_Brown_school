@@ -1,0 +1,47 @@
+@import "header.css";
+@import "greeting.css";
+@import "about.css";
+@import "skills.css";
+@import "projects.css";
+@import "price.css";
+@import "stats.css";
+@import "comments.css";
+@import "contacts.css";
+@import "location.css";
+@import "footer.css";
+
+@font-face {
+    font-family: "Franklin Gothic Medium";
+    src: url("../assets/fonts/framd.ttf");
+}
+
+body {
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #3F495A;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 30px;
+    color: #263244;
+    letter-spacing: -2px;
+}
+
+.title:before {
+    content: url("../assets/icons/hr_title.svg");
+    position: absolute;
+    top: 75%;
+    left: 48%;
+}
+

@@ -1,0 +1,4 @@
+.location {
+    min-height: 355px;
+    background: url("../assets/images/map.jpg") center/cover no-repeat;
+}

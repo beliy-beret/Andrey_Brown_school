@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Скоробогатов Станислав</title>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <span class="logo"><a href="#">Скоробогатов Станислав</a></span>
+        <nav class="navbar">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Услуги</a>
+            <a href="#projects">Кейсы</a>
+            <a href="#price">Прайс</a>
+            <a href="#comments">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="greeting">
+        <div class="wrapper">
+            <div class="greeting__description">
+                <h1 class="greeting__title">Привет<br> Я Скоробогатов Станислав</h1>
+                <p class="greeting__text">Frontend разработчик</p>
+                <div class="greeting__btn">
+                    <a href="#about">Обо мне</a>
+                    <a href="#projects">Мои работы</a>
+                </div>
+            </div>
+            <figure class="greeting__avatar">
+                <img src="assets/images/ava.png" alt="avatar">
+            </figure>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2 class="about__title title">Обо мне</h2>
+        <div class="wrapper">
+            <figure class="about__avatar">
+                <img src="assets/images/ava.png" alt="avatar">
+            </figure>
+            <p class="about__description">
+                Работаю с html, CSS, JavaScript, TypeScript. Немного знаком с webpack. Использую в работах библиотеки React,
+                Redux, Redux Thunk, Material UI, Axios. Для единообразия кода подключаю Eslint и Prettier.
+                Прошёл курс перепрофилирования в университете Иннополис, получил диплом о квалификации начинающий
+                Front-end разработчик. Обучаюсь по видео с You Tube каналов IT - Kamasutra,  UlbiTV,
+                Фрилансер по жизни и др. Ну и конечно читаю документацию .
+            </p>
+            <a href="">Скачать резюме</a>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="skills__title title">Что я умею</h2>
+        <div class="wrapper">
+            <article class="skills__item">
+                <img src="assets/icons/laptop.svg" alt="laptop">
+                <h3 class="skills__item-title">Веб-дизайн</h3>
+                <p class="skills__item-description">
+                    Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                </p>
+            </article>
+            <article class="skills__item">
+                <img src="assets/icons/develop.svg" alt="tag">
+                <h3 class="skills__item-title">Разработка</h3>
+                <p class="skills__item-description">
+                    Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.
+                </p>
+            </article>
+            <article class="skills__item">
+                <img src="assets/icons/rocket.svg" alt="rocket">
+                <h3 class="skills__item-title">СЕО-Оптимизация</h3>
+                <p class="skills__item-description">
+                    Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                </p>
+            </article>
+            <article class="skills__item">
+                <img src="assets/icons/megaphone.svg" alt="megaphone">
+                <h3 class="skills__item-title">Маркетинг</h3>
+                <p class="skills__item-description">
+                    Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="projects__title title">Кейсы</h2>
+        <div class="wrapper">
+            <p class="projects__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh
+                ante facilisis.
+            </p>
+            <article class="projects__item project">
+                <figure class="project__img">
+                    <img src="assets/images/projectIMG.jpg" alt="project screenshot">
+                </figure>
+                <div class="project__customer">
+                    <p class="project__customer-attribute">CLIENT:</p>
+                    <p>Какая-то компания</p>
+                    <p class="project__customer-attribute">WEBSITE:</p>
+                    <p>https://www.somedomain.com</p>
+                </div>
+                <div class="project__description">
+                    <h3 class="project__title">Название проекта</h3>
+                    <p class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <a class="project__link" href="#">VISIT LIVE SITE</a>
+            </article>
+        </div>
+    </section>
+    <section class="price" id="price">
+        <h2 class="price__title">Расчет стоимости</h2>
+        <form class="price__form">
+            <div class="price__form-field">
+                <label for="type">ТИП САЙТА</label>
+                <div class="price__form-select">
+                    <select name="type" id="type">
+                        <option value="1" disabled selected>Выберите пункт...</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="price__form-field">
+                <label for="design">ДИЗАЙН</label>
+                <div class="price__form-select">
+                    <select name="design" id="design">
+                        <option value="1" disabled selected>Выберите пункт...</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="price__form-field">
+                <label for="adaptive">АДАПТИВНОСТЬ</label>
+                <div class="price__form-select">
+                    <select name="adaptive" id="adaptive">
+                        <option value="1" disabled selected>Выберите пункт...</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="price__result">
+            <p>Сроки</p>
+            <p class="price__value">0</p>
+            <p>Стоимость</p>
+            <p class="price__value">0</p>
+        </div>
+    </section>
+    <section class="stats">
+        <h2 class="stats__title title">НЕМНОГО СТАТИСТИКИ</h2>
+        <div class="wrapper">
+            <article class="stats__item">
+                <figure>
+                    <img src="assets/icons/smile.svg" alt="smile">
+                </figure>
+                <span class="stats__item-value">120</span>
+                <span class="stats__item-description">СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+            </article>
+            <article class="stats__item">
+                <figure>
+                    <img src="assets/icons/programming.svg" alt="tag">
+                </figure>
+                <span class="stats__item-value">4,600</span>
+                <span class="stats__item-description">ЧАСОВ РАБОТЫ</span>
+            </article>
+            <article class="stats__item">
+                <figure>
+                    <img src="assets/icons/tick.svg" alt="checkbox">
+                </figure>
+                <span class="stats__item-value">340</span>
+                <span class="stats__item-description">ПРОЕКТОВ ЗАВЕРШЕНО</span>
+            </article>
+            <article class="stats__item">
+                <figure>
+                    <img src="assets/icons/cup.svg" alt="cup">
+                </figure>
+                <span class="stats__item-value">23</span>
+                <span class="stats__item-description">НАГРАД ПОЛУЧЕНО</span>
+            </article>
+        </div>
+    </section>
+    <section class="comments" id="comments">
+        <h2 class="comments__title title">Отзывы</h2>
+        <div class="wrapper">
+            <article class="comments__item">
+                <figure class="comments__item-avatar">
+                    <img src="assets/images/ava_comment.jpg" alt="avatar">
+                </figure>
+                <p class="comments__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
+                    Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+                </p>
+                <div class="comments__item-author">
+                    <p><span>Михаил</span><span>, Ген директор ПАО “Газпром”.</span></p>
+                </div>
+            </article>
+            <div>
+                <figure class="comments__slider">
+                    <img src="assets/icons/orange_circle.svg" alt="circle">
+                    <img src="assets/icons/circle.svg" alt="circle">
+                    <img src="assets/icons/circle.svg" alt="circle">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="wrapper">
+            <h2 class="contacts__title">Мои контакты</h2>
+            <p class="contacts__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+            <div class="contacts__items">
+                <div>
+                    <figure class="comments__items-img">
+                        <img src="assets/icons/locate.svg" alt="location">
+                    </figure>
+                    <p>Санкт-Петербург<br>Невский проспект 11</p>
+                </div>
+                <div>
+                    <figure class="comments__items-img">
+                        <img src="assets/icons/mail.svg" alt="mail">
+                    </figure>
+                    <a href="#">info@companyname.com</a>
+                </div>
+                <div>
+                    <figure class="comments__items-img">
+                        <img src="assets/icons/phone.svg" alt="phone">
+                    </figure>
+                    <p>+7 999 999-99-99</p>
+                </div>
+            </div>
+            <div  class="contacts__form">
+                <h2 class="contacts__form-title">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
+                <form>
+                    <label class="contacts__form-field">
+                        <input type="text" name="name" placeholder="Имя">
+                    </label>
+                    <label class="contacts__form-field">
+                        <input type="email" name="email" placeholder="Email">
+                    </label>
+                    <label class="contacts__form-field">
+                        <textarea placeholder="Сообщение" rows="5"></textarea>
+                    </label>
+                    <button class="contacts__form-submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="location">
+    </section>
+</main>
+<footer class="footer">
+    <p>Copyright © 2021 Андрей Браун. Design by Web</p>
+</footer>
+<script src="./js/index.js"></script>
+</body>
+</html>

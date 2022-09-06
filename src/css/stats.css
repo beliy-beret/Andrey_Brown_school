@@ -1,0 +1,31 @@
+.stats {
+    height: 500px;
+    margin-top: 7%;
+    padding: 5%;
+    background: url("../assets/images/statsBG.jpg") center/cover no-repeat;
+}
+.stats > .wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.stats__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.stats__item-value {
+    font-family: 'Impact', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #323E4F;
+}
+.stats__item-description {
+    font-size: 17px;
+    line-height: 21px;
+    color: #323E4F;
+}
