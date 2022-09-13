@@ -29,5 +29,12 @@
     font-size: 17px;
     line-height: 25px;
     text-transform: uppercase;
+    transition-duration: 0.8s;
+    border-bottom: 3px solid #203133;
 }
-
+.navbar a:active {
+    transform: scale(1.1);
+}
+.navbar a:hover {
+    border-color: coral;
+}

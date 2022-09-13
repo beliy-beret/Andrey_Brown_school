@@ -51,4 +51,8 @@
     border: 2px solid #6D7682;
     border-radius: 4px;
     padding: 0.7rem 1rem;
+    transition-duration: 0.4s;
+}
+.greeting__btn a:hover {
+    background-color: lightgrey;
 }

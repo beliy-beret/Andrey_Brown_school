@@ -37,10 +37,14 @@
     border-radius: 4px;
     padding: 0.2rem 0.4rem;
     margin-top: 4%;
+    transition-duration: 0.4s;
 }
 .about a:before {
     content: url("../assets/icons/downloadICO.svg");
     margin-right: 10px;
     position: relative;
     top: 2px;
+}
+.about a:hover {
+    background-color: #c6c7cb;
 }

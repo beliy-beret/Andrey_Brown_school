@@ -95,4 +95,9 @@
     color: #FFFFFF;
     font-weight: 400;
     justify-self: center;
+    transition-duration: 0.3s;
+}
+.contacts__form button:hover {
+    background-color: #d5d6e7;
+    color: #1C2534;
 }
