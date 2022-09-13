@@ -43,4 +43,19 @@ body {
     top: 75%;
     left: 48%;
 }
-
+/*
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 999;
+    opacity: 0.9;
+}
+.preloader img {
+    width: 10%;
+}
+*/

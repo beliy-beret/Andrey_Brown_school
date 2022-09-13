@@ -2,7 +2,7 @@
     height: 500px;
     margin-top: 7%;
     padding: 5%;
-    background: url("../assets/images/statsBG.jpg") center/cover no-repeat;
+    background: url("../assets/images/statsBG.jpg") center/cover no-repeat fixed;
 }
 .stats > .wrapper {
     margin-top: 5%;
