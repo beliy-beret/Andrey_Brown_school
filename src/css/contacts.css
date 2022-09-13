@@ -95,6 +95,9 @@
     color: #FFFFFF;
     font-weight: 400;
     justify-self: center;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 .contacts__form button:hover {

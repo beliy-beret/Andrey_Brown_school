@@ -16,6 +16,10 @@
     text-align: center;
     justify-self: flex-end;
     padding: 0 4%;
+    -moz-animation: visible 3s cubic-bezier(.53,0,.11,.11);
+    -webkit-animation: visible 3s cubic-bezier(.53,0,.11,.11);
+    -o-animation: visible 3s cubic-bezier(.53,0,.11,.11);
+    animation: visible 3s cubic-bezier(.53,0,.11,.11);
 }
 .greeting__title {
     font-weight: 400;
@@ -51,8 +55,43 @@
     border: 2px solid #6D7682;
     border-radius: 4px;
     padding: 0.7rem 1rem;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 .greeting__btn a:hover {
     background-color: lightgrey;
+}
+@-webkit-keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

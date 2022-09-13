@@ -24,6 +24,9 @@
     line-height: 21px;
     padding: 0.5rem 2.5rem;
     border-radius: 5px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 .project a:hover {

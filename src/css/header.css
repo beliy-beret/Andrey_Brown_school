@@ -29,10 +29,16 @@
     font-size: 17px;
     line-height: 25px;
     text-transform: uppercase;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
     border-bottom: 3px solid #203133;
 }
 .navbar a:active {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
     transform: scale(1.1);
 }
 .navbar a:hover {
