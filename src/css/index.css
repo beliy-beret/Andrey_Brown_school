@@ -21,11 +21,6 @@ body {
     font-weight: 400;
     color: #3F495A;
 }
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .title {
     text-transform: uppercase;
     text-align: center;
@@ -36,7 +31,6 @@ body {
     color: #263244;
     letter-spacing: -2px;
 }
-
 .title:before {
     content: url("../assets/icons/hr_title.svg");
     position: absolute;

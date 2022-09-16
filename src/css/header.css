@@ -1,27 +1,27 @@
 .header {
-    padding: 1rem 3rem;
     background-color: #203133;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.header > .wrapper {
-    display: flex;
-    justify-content: space-between;
+.header a {
+    text-decoration: none;
+}
+.header a:visited {
+    color: #FFFFFF;
+}
+.header .burger {
+    background-color: inherit;
+    border: none;
+}
+.header li > a:visited {
+    color: black;
 }
 .logo a {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 23px;
     line-height: 25px;
-    text-decoration: none;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10%;
-    gap: 1rem;
 }
 .navbar a {
     color: #FFFFFF;
@@ -34,6 +34,7 @@
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
     border-bottom: 3px solid #203133;
+    margin-right: 0.5rem;
 }
 .navbar a:active {
     -webkit-transform: scale(1.1);
