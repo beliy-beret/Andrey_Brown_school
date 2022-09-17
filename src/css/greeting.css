@@ -1,21 +1,8 @@
 .greeting {
-    background-image: url("../assets/images/bg_about.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("../assets/images/ava.png") right 5% bottom no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;    
+    padding: 23% 0 9%;
 }
-.greeting > .wrapper {
-    max-width: 1920px;
-    display: flex;
-}
-.greeting__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 1 55%;
-    text-align: center;
-    justify-self: flex-end;
-    padding: 0 4%;
+.greeting__description {        
     -moz-animation: visible 3s cubic-bezier(.53,0,.11,.11);
     -webkit-animation: visible 3s cubic-bezier(.53,0,.11,.11);
     -o-animation: visible 3s cubic-bezier(.53,0,.11,.11);
@@ -47,6 +34,7 @@
     margin-top: 3rem;
 }
 .greeting__btn a {
+    text-decoration: none;
     margin-right: 1.5rem;
     font-weight: 400;
     font-size: 19px;
