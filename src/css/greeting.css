@@ -1,6 +1,6 @@
 .greeting {
-    background: url("../assets/images/ava.png") right 5% bottom no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;    
-    padding: 23% 0 9%;
+    background: url("../assets/images/ava.png") right 25% bottom no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;    
+    padding: 23rem 0 9%;
 }
 .greeting__description {        
     -moz-animation: visible 3s cubic-bezier(.53,0,.11,.11);
@@ -42,6 +42,7 @@
 .greeting__btn a:hover {
     background-color: lightgrey;
 }
+
 @-webkit-keyframes visible {
     from {
         opacity: 0;
@@ -72,5 +73,68 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@media  screen and (max-width: 576px) {
+    .greeting {
+        background: url("../assets/images/bg_about.jpg") center/cover no-repeat;
+        padding: 10% 0;        
+    }
+    .greeting__title {
+        font-size: 2.5rem;
+        line-height: 150%;        
+    }
+    .greeting__text {
+        font-size: 1.5rem;
+    }
+}
+@media  screen and (min-width: 577px) and (max-width: 768px) {
+    .greeting__title {
+        font-size: 1.5rem;
+        line-height: 200%;        
+    }
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom/40% no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+        padding: 10% 0;        
+    }
+}
+@media  screen and (min-width: 769px) and (max-width: 992px) {
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom/45% no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+        padding: 12% 0;        
+    }
+    .greeting__title {
+        font-size: 2rem;
+    }
+}
+@media  screen and (min-width: 993px) and (max-width: 1200px) {
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom/45% no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+        padding: 12% 0;        
+    }
+    .greeting__title {
+        font-size: 2.2rem;
+    }    
+}
+@media  screen and (min-width: 1201px) and (max-width: 1400px) {
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom/50% no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+        padding: 12% 0;        
+    }
+    .greeting__title {
+        font-size: 3rem;
+    }
+}
+@media  screen and (min-width: 1401px) and (max-width: 1600px) {
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom/50% no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+                
+    }
+}
+@media  screen and (min-width: 1601px) and (max-width: 1900px) {
+    .greeting {
+        background: url("../assets/images/ava.png") right 2% bottom no-repeat, url("../assets/images/bg_about.jpg") center/cover no-repeat;
+                
     }
 }
