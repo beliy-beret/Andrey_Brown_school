@@ -4,11 +4,8 @@
     background: url("../assets/images/skillsBG.jpg") no-repeat center;
     background-size: cover;
 }
-.skills > .wrapper {
-    max-width: 1200px;
-    margin: 5% auto 0;
-    display: flex;
-    gap: 5%;
+.skills__title {
+    margin-bottom: 5rem;
 }
 .skills__item {
     text-align: center;
@@ -19,4 +16,10 @@
     font-size: 19px;
     line-height: 20px;
     color: #CF7600;
+}
+
+@media screen and (max-width: 576px) {
+    .skills__title {
+        margin-bottom: 3rem;
+    }
 }
