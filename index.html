@@ -236,57 +236,65 @@
       </section>
       <section class="stats">
         <h2 class="stats__title title">НЕМНОГО СТАТИСТИКИ</h2>
-        <div class="wrapper">
-          <article class="stats__item">
-            <figure>
-              <img src="src/assets/icons/smile.svg" alt="smile" />
-            </figure>
-            <span class="stats__item-value">120</span>
-            <span class="stats__item-description">СЧАСТЛИВЫХ КЛИЕНТОВ</span>
-          </article>
-          <article class="stats__item">
-            <figure>
-              <img src="src/assets/icons/programming.svg" alt="tag" />
-            </figure>
-            <span class="stats__item-value">4,600</span>
-            <span class="stats__item-description">ЧАСОВ РАБОТЫ</span>
-          </article>
-          <article class="stats__item">
-            <figure>
-              <img src="src/assets/icons/tick.svg" alt="checkbox" />
-            </figure>
-            <span class="stats__item-value">340</span>
-            <span class="stats__item-description">ПРОЕКТОВ ЗАВЕРШЕНО</span>
-          </article>
-          <article class="stats__item">
-            <figure>
-              <img src="src/assets/icons/cup.svg" alt="cup" />
-            </figure>
-            <span class="stats__item-value">23</span>
-            <span class="stats__item-description">НАГРАД ПОЛУЧЕНО</span>
-          </article>
+        <div class="container pt-5">
+          <div class="row g-sm-1 g-md-3 g-lg-5">
+            <article class="stats__item col-3">
+              <figure>
+                <img src="src/assets/icons/smile.svg" alt="smile" />
+              </figure>
+              <span class="stats__item-value">120</span>
+              <span class="stats__item-description">СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+            </article>
+            <article class="stats__item col-3">
+              <figure>
+                <img src="src/assets/icons/programming.svg" alt="tag" />
+              </figure>
+              <span class="stats__item-value">4,600</span>
+              <span class="stats__item-description">ЧАСОВ РАБОТЫ</span>
+            </article>
+            <article class="stats__item col-3">
+              <figure>
+                <img src="src/assets/icons/tick.svg" alt="checkbox" />
+              </figure>
+              <span class="stats__item-value">340</span>
+              <span class="stats__item-description">ПРОЕКТОВ ЗАВЕРШЕНО</span>
+            </article>
+            <article class="stats__item col-3">
+              <figure>
+                <img src="src/assets/icons/cup.svg" alt="cup" />
+              </figure>
+              <span class="stats__item-value">23</span>
+              <span class="stats__item-description">НАГРАД ПОЛУЧЕНО</span>
+            </article>
+          </div>
         </div>
       </section>
       <section class="comments" id="comments">
         <h2 class="comments__title title">Отзывы</h2>
-        <div class="wrapper">
-          <article class="comments__item">
-            <figure class="comments__item-avatar">
-              <img src="src/assets/images/ava_comment.jpg" alt="avatar" />
-            </figure>
-            <p class="comments__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-              dapibus leo nec ornare diam. Sed commodo nibh ante facilisis
-              bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
-            </p>
-            <div class="comments__item-author">
-              <p>
-                <span>Михаил</span><span>, Ген директор ПАО “Газпром”.</span>
+        <div class="container">
+          <div class="row">
+            <article class="comments__item col-12">
+              <figure class="comments__item-avatar">
+                <img
+                  class="img-fluid"
+                  src="src/assets/images/ava_comment.jpg"
+                  alt="avatar"
+                />
+              </figure>
+              <p class="comments__item-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis
+                bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
               </p>
-            </div>
-          </article>
-          <div>
-            <figure class="comments__slider">
+              <div class="comments__item-author">
+                <p>
+                  <span>Михаил</span><span>, Ген директор ПАО “Газпром”.</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="row">
+            <figure class="comments__slider col-12 text-center">
               <img src="src/assets/icons/orange_circle.svg" alt="circle" />
               <img src="src/assets/icons/circle.svg" alt="circle" />
               <img src="src/assets/icons/circle.svg" alt="circle" />
@@ -295,34 +303,36 @@
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <div class="wrapper">
+        <div class="container-lg wrapper">
           <h2 class="contacts__title">Мои контакты</h2>
           <p class="contacts__comment">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leo nec ornare diamcoccodo
           </p>
-          <div class="contacts__items">
-            <div>
-              <figure class="comments__items-img">
+          <div class="row g-2">
+            <div class="col-12 col-sm-4 contacts__item">
+              <figure class="contacts__item-img">
                 <img src="src/assets/icons/locate.svg" alt="location" />
               </figure>
-              <p>Санкт-Петербург<br />Невский проспект 11</p>
+              <p>Санкт-Петербург Невский проспект 11</p>
             </div>
-            <div>
-              <figure class="comments__items-img">
+            <div class="col-12 col-sm-4 contacts__item">
+              <figure class="contacts__item-img">
                 <img src="src/assets/icons/mail.svg" alt="mail" />
               </figure>
               <a href="#">info@companyname.com</a>
             </div>
-            <div>
-              <figure class="comments__items-img">
+            <div class="col-12 col-sm-4 contacts__item">
+              <figure class="contacts__item-img">
                 <img src="src/assets/icons/phone.svg" alt="phone" />
               </figure>
               <p>+7 999 999-99-99</p>
             </div>
           </div>
           <div class="contacts__form">
-            <h2 class="contacts__form-title">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
+            <h2 class="contacts__form-title text-center">
+              ОСТАВЬТЕ МНЕ СООБЩЕНИЕ
+            </h2>
             <form>
               <label class="contacts__form-field">
                 <input type="text" name="name" placeholder="Имя" />
