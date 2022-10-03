@@ -59,7 +59,7 @@
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 1fr auto;
 }
-.price__value {
+.price p {
     font-size: 30px;
     line-height: 34px;
 }

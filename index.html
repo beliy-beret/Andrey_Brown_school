@@ -13,11 +13,9 @@
     <title>Скоробогатов Станислав</title>
   </head>
   <body>
-    <!--
-<div class="preloader">
-    <img src="./src/assets/icons/Book.gif" alt="preloader">
-</div>
--->
+    <div class="preloader">
+      <img src="./src/assets/icons/Book.gif" alt="preloader" />
+    </div>
     <header class="header">
       <div class="container">
         <div class="row align-items-center justify-content-between">
@@ -192,15 +190,17 @@
       </section>
       <section class="price" id="price">
         <h2 class="price__title">Расчет стоимости</h2>
-        <form class="price__form">
+        <form class="price__form" name="price">
           <div class="price__form-field">
             <label for="type">ТИП САЙТА</label>
             <div class="price__form-select">
-              <select name="type" id="type">
-                <option value="1" disabled selected>Выберите пункт...</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+              <select name="website_type" id="type">
+                <option value="not_selected" disabled selected>
+                  Выберите пункт...
+                </option>
+                <option value="1000">Сайт-визитка</option>
+                <option value="1500">Корпоративный сайт</option>
+                <option value="2000">Интернет-магазин</option>
               </select>
             </div>
           </div>
@@ -208,10 +208,12 @@
             <label for="design">ДИЗАЙН</label>
             <div class="price__form-select">
               <select name="design" id="design">
-                <option value="1" disabled selected>Выберите пункт...</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="not_selected" disabled selected>
+                  Выберите пункт...
+                </option>
+                <option value="500">Шаблонный</option>
+                <option value="1000">Уникальный</option>
+                <option value="1500">WOW-дизайн</option>
               </select>
             </div>
           </div>
@@ -219,19 +221,21 @@
             <label for="adaptive">АДАПТИВНОСТЬ</label>
             <div class="price__form-select">
               <select name="adaptive" id="adaptive">
-                <option value="1" disabled selected>Выберите пункт...</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="not_selected" disabled selected>
+                  Выберите пункт...
+                </option>
+                <option value="500">ПК</option>
+                <option value="500">Мобильный</option>
+                <option value="1500">ПК + Мобильный</option>
               </select>
             </div>
           </div>
         </form>
         <div class="price__result">
-          <p>Сроки</p>
-          <p class="price__value">0</p>
+          <!-- <p>Сроки</p>
+          <p><span class="price__time">-</span> ч.</p> -->
           <p>Стоимость</p>
-          <p class="price__value">0</p>
+          <p><span class="price__value">-</span> руб.</p>
         </div>
       </section>
       <section class="stats">
