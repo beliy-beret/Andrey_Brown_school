@@ -27,4 +27,26 @@ $(document).ready(function () {
       }
     });
   });
+
+  const stats = $(".stats__item-value");
+  runningNumbers(100, stats.eq(0));
+  runningNumbers(4600, stats.eq(1));
+  runningNumbers(340, stats.eq(2));
+  runningNumbers(23, stats.eq(3));
 });
+
+function runningNumbers(num, element) {
+  let elemVal = 0;
+  const step = 15;
+  const time = 1000; // ms
+  const intervalTiming = Math.round(time / (num / step));
+  const interval = setInterval(() => {
+    elemVal = elemVal + step;
+    if (elemVal > num) {
+      element.text(num);
+      clearInterval(interval);
+    } else {
+      element.text(elemVal);
+    }
+  }, intervalTiming);
+}
