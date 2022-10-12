@@ -38,12 +38,15 @@
     grid-column: 1/3;
     grid-row: 1;
     margin-bottom: 4%;
-    height: 550px;
+    height: 400px;
 }
 .project__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.project__img a {
+    padding: 0;
 }
 .project__customer {    
     grid-column: 1;

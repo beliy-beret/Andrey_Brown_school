@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="src/css/bootstrap.min.css" />
     <link rel="stylesheet" href="src/css/animate.min.css" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="src/css/index.css" />
     <title>Скоробогатов Станислав</title>
   </head>
@@ -239,10 +240,16 @@
                 <div class="carousel-item active">
                   <article class="projects__item project">
                     <figure class="project__img">
-                      <img
-                        src="src/assets/images/projectIMG.jpg"
-                        alt="project screenshot"
-                      />
+                      <a
+                        class="popup-image"
+                        href="src/assets/images/projectIMG.jpg"
+                        title="Popup modal"
+                      >
+                        <img
+                          src="src/assets/images/projectIMG.jpg"
+                          alt="project screenshot"
+                        />
+                      </a>
                     </figure>
                     <div class="project__customer">
                       <p class="project__customer-attribute">CLIENT:</p>
@@ -268,10 +275,15 @@
                 <div class="carousel-item">
                   <article class="projects__item project">
                     <figure class="project__img">
-                      <img
-                        src="src/assets/images/Computer.png"
-                        alt="project screenshot"
-                      />
+                      <a
+                        href="src/assets/images/Computer.png"
+                        class="popup-image"
+                      >
+                        <img
+                          src="src/assets/images/Computer.png"
+                          alt="project screenshot"
+                        />
+                      </a>
                     </figure>
                     <div class="project__customer">
                       <p class="project__customer-attribute">CLIENT:</p>
@@ -297,10 +309,12 @@
                 <div class="carousel-item">
                   <article class="projects__item project">
                     <figure class="project__img">
-                      <img
-                        src="src/assets/images/news.png"
-                        alt="project screenshot"
-                      />
+                      <a href="src/assets/images/news.png" class="popup-image">
+                        <img
+                          src="src/assets/images/news.png"
+                          alt="project screenshot"
+                        />
+                      </a>
                     </figure>
                     <div class="project__customer">
                       <p class="project__customer-attribute">CLIENT:</p>
@@ -524,6 +538,7 @@
       <p>Copyright © 2021 Андрей Браун. Design by Web</p>
     </footer>
     <script src="./src/js/jquery-3.6.1.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script src="./src/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/index.js"></script>
   </body>

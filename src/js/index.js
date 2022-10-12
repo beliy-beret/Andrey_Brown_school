@@ -29,11 +29,23 @@ $(document).ready(function () {
   const myModal = new bootstrap.Modal(document.getElementById("myModal"));
   setTimeout(() => myModal.show(), 10000);
 
+  const carouselComments = new bootstrap.Carousel(
+    document.getElementById("carouselComments"),
+    {
+      ride: false,
+    }
+  );
+
   const stats = $(".stats__item-value");
   runningNumbers(100, stats.eq(0));
   runningNumbers(4600, stats.eq(1));
   runningNumbers(340, stats.eq(2));
   runningNumbers(23, stats.eq(3));
+
+  $(".popup-image").magnificPopup({
+    type: "image",
+    closeOnContentClick: true,
+  });
 });
 
 function runningNumbers(num, element) {
