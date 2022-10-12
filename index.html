@@ -455,32 +455,105 @@
         <h2 class="comments__title title section__title">Отзывы</h2>
         <div class="container">
           <div class="row">
-            <article class="comments__item col-12">
-              <figure class="comments__item-avatar">
-                <img
-                  class="img-fluid"
-                  src="src/assets/images/ava_comment.jpg"
-                  alt="avatar"
-                />
-              </figure>
-              <p class="comments__item-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis
-                bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
-              </p>
-              <div class="comments__item-author">
-                <p>
-                  <span>Михаил</span><span>, Ген директор ПАО “Газпром”.</span>
-                </p>
+            <div
+              id="carouselComments"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner mb-5">
+                <div class="carousel-item active">
+                  <article class="comments__item col-12">
+                    <figure class="comments__item-avatar">
+                      <img
+                        class="img-fluid"
+                        src="src/assets/images/ava_comment.jpg"
+                        alt="avatar"
+                      />
+                    </figure>
+                    <p class="comments__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis sed dapibus leo nec ornare diam. Sed commodo nibh
+                      ante facilisis bibendum dolor feugiat at duis sed dapidus
+                      leo nec ornare diam.
+                    </p>
+                    <div class="comments__item-author">
+                      <p>
+                        <span>Михаил</span
+                        ><span>, Ген директор ПАО “Газпром”.</span>
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="carousel-item">
+                  <article class="comments__item col-12">
+                    <figure class="comments__item-avatar">
+                      <img
+                        class="img-fluid"
+                        src="src/assets/images/ava_comment.jpg"
+                        alt="avatar"
+                      />
+                    </figure>
+                    <p class="comments__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis sed dapibus leo nec ornare diam. Sed commodo nibh
+                      ante facilisis bibendum dolor feugiat at duis sed dapidus
+                      leo nec ornare diam.
+                    </p>
+                    <div class="comments__item-author">
+                      <p>
+                        <span>Михаил</span
+                        ><span>, Ген директор ПАО “Газпром”.</span>
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="carousel-item">
+                  <article class="comments__item col-12">
+                    <figure class="comments__item-avatar">
+                      <img
+                        class="img-fluid"
+                        src="src/assets/images/ava_comment.jpg"
+                        alt="avatar"
+                      />
+                    </figure>
+                    <p class="comments__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis sed dapibus leo nec ornare diam. Sed commodo nibh
+                      ante facilisis bibendum dolor feugiat at duis sed dapidus
+                      leo nec ornare diam.
+                    </p>
+                    <div class="comments__item-author">
+                      <p>
+                        <span>Михаил</span
+                        ><span>, Ген директор ПАО “Газпром”.</span>
+                      </p>
+                    </div>
+                  </article>
+                </div>
               </div>
-            </article>
-          </div>
-          <div class="row">
-            <figure class="comments__slider col-12 text-center">
-              <img src="src/assets/icons/orange_circle.svg" alt="circle" />
-              <img src="src/assets/icons/circle.svg" alt="circle" />
-              <img src="src/assets/icons/circle.svg" alt="circle" />
-            </figure>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselComments"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselComments"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselComments"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
