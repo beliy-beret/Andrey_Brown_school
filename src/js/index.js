@@ -37,14 +37,42 @@ $(document).ready(function () {
   );
 
   const stats = $(".stats__item-value");
-  runningNumbers(100, stats.eq(0));
-  runningNumbers(4600, stats.eq(1));
-  runningNumbers(340, stats.eq(2));
-  runningNumbers(23, stats.eq(3));
+  const statsObserver = new IntersectionObserver(
+    function (items) {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          runningNumbers(100, stats.eq(0));
+          runningNumbers(4600, stats.eq(1));
+          runningNumbers(340, stats.eq(2));
+          runningNumbers(23, stats.eq(3));
+        } else {
+          stats.each((i, item) => $(item).text("0"));
+        }
+      });
+    },
+    { threshold: 0.7 }
+  );
+  const statsSection = document.querySelector(".stats");
+  statsObserver.observe(statsSection);
+
+  const projectsImg = $(".projects img");
+  const projectsSection = document.querySelector(".projects");
+  const projectsObserver = new IntersectionObserver(
+    (items) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          projectsImg.each((i, img) => {
+            $(img).attr("src", img.dataset.src);
+          });
+        }
+      });
+    },
+    { threshold: 0 }
+  );
+  projectsObserver.observe(projectsSection);
 
   $(".popup-image").magnificPopup({
     type: "image",
-    closeOnContentClick: true,
   });
 });
 
