@@ -1,3 +1,4 @@
+"use strict";
 $(document).ready(function () {
   setTimeout(() => {
     $(".preloader").css("display", "none");
@@ -10,9 +11,6 @@ $(document).ready(function () {
     $(".price__value").text(priceValue);
     $(".price__time").text(Math.floor(priceValue / 50));
   });
-
-  const myModal = new bootstrap.Modal(document.getElementById("myModal"));
-  setTimeout(() => myModal.show(), 10000);
 
   $(window).scroll(function () {
     const scrollDistance = $(this).scrollTop();
@@ -27,6 +25,9 @@ $(document).ready(function () {
       }
     });
   });
+
+  const myModal = new bootstrap.Modal(document.getElementById("myModal"));
+  setTimeout(() => myModal.show(), 10000);
 
   const stats = $(".stats__item-value");
   runningNumbers(100, stats.eq(0));
